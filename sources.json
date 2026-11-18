@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-18",
+  "notes": "Project Hunt source list. The app reads the public copy at github.com/TheAshikSarker/project-hunt-config and falls back to this bundled file. Only public, documented endpoints are listed; each entry says what was checked.",
+  "sources": [
+    {
+      "id": "lever-appen",
+      "name": "CrowdGen by Appen",
+      "type": "ATS_LEVER",
+      "slug": "appen",
+      "platformId": "crowdgen",
+      "enabled": true,
+      "fetchIntervalHours": 6,
+      "tosChecked": true,
+      "notes": "Lever public postings API (no key). Lever documents it as public; published postings are publicly viewable. Live Bengali (Bangladesh) transcription postings seen Nov 2026."
+    },
+    {
+      "id": "lever-rws",
+      "name": "RWS TrainAI",
+      "type": "ATS_LEVER",
+      "slug": "rws",
+      "platformId": "rws-trainai",
+      "enabled": true,
+      "fetchIntervalHours": 6,
+      "tosChecked": true,
+      "notes": "Lever public postings API. Bengali (Bangladesh) transcription and speech evaluation roles based in Dhaka seen Nov 2026."
+    },
+    {
+      "id": "lever-welocalize",
+      "name": "Welo Data (Welocalize)",
+      "type": "ATS_LEVER",
+      "slug": "welocalize",
+      "platformId": "welo-data",
+      "enabled": true,
+      "fetchIntervalHours": 6,
+      "tosChecked": true,
+      "notes": "Lever public postings API. Bengali roles open to Bangladesh / India seen Nov 2026."
+    },
+    {
+      "id": "lever-weloglobal",
+      "name": "Welo Data (Welo Global)",
+      "type": "ATS_LEVER",
+      "slug": "weloglobal",
+      "platformId": "welo-data",
+      "enabled": true,
+      "fetchIntervalHours": 12,
+      "tosChecked": true,
+      "notes": "Second Welo Lever board. Bengali translation validation roles seen 2026."
+    },
+    {
+      "id": "lever-getwingapp",
+      "name": "Wing Data",
+      "type": "ATS_LEVER",
+      "slug": "getwingapp",
+      "platformId": "wing",
+      "enabled": true,
+      "fetchIntervalHours": 12,
+      "tosChecked": true,
+      "notes": "Lever public postings API. Multi-locale voice data roles that include Bengali."
+    },
+    {
+      "id": "greenhouse-alignerr",
+      "name": "Alignerr",
+      "type": "ATS_GREENHOUSE",
+      "slug": "alignerr",
+      "platformId": "alignerr",
+      "enabled": true,
+      "fetchIntervalHours": 12,
+      "tosChecked": true,
+      "notes": "Greenhouse Job Board API (public, no key). Board lists 'AI Trainer for Bengali Writers/Speakers'."
+    },
+    {
+      "id": "recruitee-lxt",
+      "name": "LXT",
+      "type": "ATS_RECRUITEE",
+      "slug": "lxt",
+      "platformId": "lxt",
+      "enabled": true,
+      "fetchIntervalHours": 12,
+      "tosChecked": true,
+      "notes": "Recruitee Careers Site API, documented as not needing authorization. Bengali speech rater and transcriber roles seen."
+    },
+    {
+      "id": "recruitee-dataforce",
+      "name": "DataForce by TransPerfect",
+      "type": "ATS_RECRUITEE",
+      "slug": "dataforce",
+      "platformId": "dataforce",
+      "enabled": true,
+      "fetchIntervalHours": 12,
+      "tosChecked": true,
+      "notes": "Recruitee Careers Site API. Many roles are on-site in India; the filter marks those as location restricted."
+    },
+    {
+      "id": "remotive-bengali",
+      "name": "Remotive (search: Bengali, Bangla)",
+      "type": "BOARD_REMOTIVE",
+      "keywords": ["bengali", "bangla"],
+      "enabled": true,
+      "fetchIntervalHours": 12,
+      "tosChecked": true,
+      "notes": "Remotive public API. Terms: jobs are delayed 24 hours, link back to Remotive, call only a few times a day (2 keywords x 2 per day here)."
+    },
+    {
+      "id": "rss-jobicy-bengali",
+      "name": "Jobicy (feed search: Bengali)",
+      "type": "RSS",
+      "url": "https://jobicy.com/?feed=job_feed&search_keywords=bengali",
+      "enabled": true,
+      "fetchIntervalHours": 24,
+      "tosChecked": false,
+      "notes": "Jobicy job feed with a keyword. Jobicy allows automated checks at most once an hour and asks for attribution. Feed URL format not yet verified on a device."
+    }
+  ]
+}
